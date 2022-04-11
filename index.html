@@ -1,29 +1,99 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Bishoy Roufael - Website</title>
-</head>
-<body>
-<style>
-	body
-	{
-		font-family: monospace; 
-		text-align: center;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
-	}
-</style>
-I just like to keep it that simple, the website isn't broken :)
-<br></br>
-My name is Bishoy Roufael. I do love writing code. I am also a passionate musician.
-<br></br>
-Wanna hire me? check my resume: <a href="assets/resume.pdf">here</a> 
-<br></br>
-wanna hear my music? check out my instagram: <a href="https://www.instagram.com/bishoyroufael/">here</a> 
-<br></br>
 
-that's all, see ya!
+<head>
+	<title>Bishoy Roufael - Website</title>
+</head>
+
+<body>
+
+	<style>
+		span {
+
+			background-color: blue;
+			color: white;
+		}
+		.typewriter {
+			overflow: hidden;
+			/* Ensures the content is not revealed until the animation */
+			border-right: .15em solid orange;
+
+			/* The typwriter cursor */
+			white-space: nowrap;
+
+			/* Keeps the content on a single line */
+			margin: 0 auto;
+
+			/* Gives that scrolling effect as the typing happens */
+			letter-spacing: .05em;
+
+			/* Adjust as needed */
+			animation:
+				typing 2.5s steps(1000, end),
+				blink-caret .75s steps(1000) infinite;
+		}
+
+		/* The typing effect */
+		@keyframes typing {
+			from {
+				width: 0
+			}
+
+			to {
+				width: 100%
+			}
+		}
+
+		/* The typewriter cursor effect */
+		@keyframes blink-caret {
+			
+			from,
+			to {
+				border-color: transparent
+			}
+			25% {
+				border-color:orange;
+			}
+
+			50% {
+				border-color:blue;
+			}
+
+			75% {
+				border-color:orange
+			}
+
+		}
+
+		@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+		body {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+
+		p {
+			text-align: center;
+			font-family: 'Source Code Pro', monospace;
+			font-size: 20px;
+			font-weight: bold;
+			/* padding-bottom: 2%; */
+		}
+	</style>
+
+
+	<p class="typewriter"> i just like to keep it that simple.</p>
+	<p class="typewriter" > my name is <span>Bishoy Roufael</span>. I do love writing code. I am also a passionate musician.</p>
+	<p class="typewriter"> my favorite code editor? it's <span>vim</span></p>
+	<p class="typewriter"> my favorite algo? <span>a*</span></p>
+	<p class="typewriter"> wanna hire me? check my resume: <a href="assets/resume.pdf">here</a>.</p>
+	<p class="typewriter"> wanna hear my music? check out my instagram: <a href="https://www.instagram.com/bishoyroufael/">here</a>.</p>
+	<p class="typewriter" style="margin-top: 5%"> that's all, see u!</p>
 </body>
+
 </html>
+
+
